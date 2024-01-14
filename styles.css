@@ -1,0 +1,11 @@
+#img {
+    border-radius: 15px;
+}
+
+#reviews {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
