@@ -6,6 +6,11 @@
     <title>Café Round the Corner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    <style>
+      input, label {
+        margin: 0.5em;
+      }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -27,8 +32,105 @@
         </header>
     </div>
 
-    
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <form id="order" method="post">
 
+            <fieldset>
+              <legend>Personal Details</legend>
+              <table>
+                <tr>
+                  <td><label>Name</label></td>
+                  <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                  <td><label>Number</label></td>
+                  <td><input type="tel" name="number"></td>
+                </tr>
+                <tr>
+                  <td><label>Address:</label></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><label>House Number</label></td>
+                  <td><input type="text" name="hno"></td>
+                </tr>
+                <tr>
+                  <td><label>Colony</label></td>
+                  <td><input type="text" name="colony"></td>
+                </tr>
+                <tr>
+                  <td><label>City</label></td>
+                  <td><input type="text" name="city"></td>
+                </tr>
+              </table>
+            </fieldset>
+            <hr>
+            
+            <fieldset>
+              <legend>Order Details</legend>
+              <table>
+                <tr>
+                  <td><label><b>Item</b></label></td>
+                  <td><label><b>Quantity</b></label></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Americano-Wake-Up" value="Americano-Wake-Up"><label>Americano Wake-Up</label></td>
+                  <td><input type="number" name="Americano-Wake-Up-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Espresso-Elegance" value="Espresso-Elegance"><label>Espresso Elegance</label></td>
+                  <td><input type="number" name="Espresso-Elegance-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Affogato-Affair" value="Affogato-Affair"><label>Affogato Affair</label></td>
+                  <td><input type="number" name="Affogato-Affair-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Iced-Coconut-Latte" value="Iced-Coconut-Latte"><label>Iced Coconut Latte</label></td>
+                  <td><input type="number" name="Iced-Coconut-Latte-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Maple-Pecan-Latte" value="Maple-Pecan-Latte"><label>Maple Pecan Latte</label></td>
+                  <td><input type="number" name="Maple-Pecan-Latte-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Hazelnut-Macchiato" value="Hazelnut-Macchiato"><label>Hazelnut Macchiato</label></td>
+                  <td><input type="number" name="Hazelnut-Macchiato-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Irish-Cream-Cold-Brew" value="Irish-Cream-Cold-Brew"><label>Irish Cream Cold Brew</label></td>
+                  <td><input type="number" name="Irish-Cream-Cold-Brew-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Caramel-Mocha-Delight" value="Caramel-Mocha-Delight"><label>Caramel Mocha Delight</label></td>
+                  <td><input type="number" name="Caramel-Mocha-Delight-quantity"></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="Chocolate-Chip-Cookie-Latte" value="Chocolate-Chip-Cookie-Latte"><label>Chocolate Chip Cookie Latte</label></td>
+                  <td><input type="number" name="Chocolate-Chip-Cookie-Latte-quantity"></td>
+                </tr>
+
+              </table>
+            </fieldset>
+            <br>
+            <button class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
